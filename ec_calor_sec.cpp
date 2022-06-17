@@ -17,6 +17,16 @@ double inicial ( double x, double tiempo ) {
 
 int main ( int argc, char *argv[] )
 {
+  // j_max -> intervalos de tiempo
+  // n     -> numero de intervalos
+  // 100.0 + 10.0 *sin(tiempo) -> condicion de frontera inicial
+  // limite = 75.0 -> limite extremo
+  // k -> constante de multiplicacion
+  // [x_min,x_max] -> dominio total
+  // [t_min,t_max] -> intervalo total de tiempo
+  // inicial() -> límite = 95.0 -> temperatura inicial
+
+
   int i,j,j_min = 0,j_max = 400,tag,n = 10;
   double k = 0.002;
   double tiempo,dt,tmax = 10.0,tmin = 0.0,tnew;
